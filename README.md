@@ -4,7 +4,7 @@ PHP Docker Image for MageCloudKit projects
 
 ## Building the images
 
-    $ make build TAG=7.0-fpm
+    $ make build TAG=7.2-fpm
 
 ## Contributing
 
