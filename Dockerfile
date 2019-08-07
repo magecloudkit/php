@@ -12,12 +12,13 @@ RUN apt-get update \
 RUN docker-php-ext-configure \
   gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/
 
+RUN pecl install mcrypt-1.0.1
+
 RUN docker-php-ext-install \
   bcmath \
   gd \
   intl \
   mbstring \
-  mcrypt \
   opcache \
   pdo_mysql \
   soap \
